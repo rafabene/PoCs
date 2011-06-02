@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process-definition xmlns="urn:jbpm.org:jpdl-3.2"
+	name="simple">
+
+
+
+
+	<start-state name="inicio">
+		<transition to="task-node1"></transition>
+	</start-state>
+
+
+	<fork name="servicos">
+		<transition to="psZumbi" name="zumbi1"></transition>
+	</fork>
+
+	<join name="uniao">
+		<transition to="end-state1">
+			<action class="com.sample.action.LimpaServicosHandler"></action>
+		</transition>
+	</join>
+
+	<process-state name="psZumbi">
+		<transition to="uniao" name="zumbi2"></transition>
+	</process-state>
+
+	<task-node name="task-node1">
+		<task name="xxx"></task>
+		<transition to="servicos">
+			<action class="com.sample.action.CriarServicosHandler"></action>
+		</transition>
+	</task-node>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

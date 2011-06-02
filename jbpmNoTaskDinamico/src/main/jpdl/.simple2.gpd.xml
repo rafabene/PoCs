@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="simple2" width="755" height="427">
+  <node name="inicio" x="154" y="8" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="servicos" x="84" y="130" width="252" height="24">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="uniao" x="83" y="274" width="252" height="24">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="181" y="350" width="132" height="36"/>
+  <node name="process-state1" x="85" y="194" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="process-state2" x="257" y="193" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <deployment graphicalInfoFile="/PocCamara/src/main/jpdl/.simple2.gpd.xml" imageFile="/PocCamara/src/main/jpdl/simple2.jpg" serverName="localhost" serverPort="8080" serverDeployer="/gpd-deployer/upload">
+    <classesAndResources>
+      <element type="java" value="/PocCamara/src/main/java/com/sample/action/CriarServicosHandler2.java"/>
+    </classesAndResources>
+  </deployment>
+</root-container>

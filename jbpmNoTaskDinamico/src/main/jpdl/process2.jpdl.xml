@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns="urn:jbpm.org:jpdl-3.2"  name="process2">
+
+
+	<start-state name="start-state1">
+		<transition to="node1"></transition>
+	</start-state>
+
+
+	<node name="node1">
+		<action class="com.sample.action.MessageActionHandler">
+			<message>
+				teste
+			</message>
+		</action>
+		<transition to="end-state1"></transition>
+	</node>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+
+</process-definition>
