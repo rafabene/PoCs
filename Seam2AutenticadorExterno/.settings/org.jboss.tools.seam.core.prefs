@@ -1,0 +1,17 @@
+#Thu Jun 02 11:57:41 BRT 2011
+action.package=exemplo.session
+action.sources=/Seam2AutenticadorExterno/src/main
+eclipse.preferences.version=1
+model.package=exemplo.entity
+model.sources=/Seam2AutenticadorExterno/src/main
+seam.ejb.project=Seam2AutenticadorExterno
+seam.project.connection.profile=Teste
+seam.project.deployment.type=war
+seam.project.settings.version=1.1
+seam.project.web.root.folder=/Seam2AutenticadorExterno/WebContent
+seam.runtime.name=seam-2.2.2 EAP
+seam.settings.changed.by.user=true
+seam.test.creating=false
+seam.test.project=Seam2AutenticadorExterno-test
+test.package=org.domain.seam2autenticadorexterno.test
+test.sources=/Seam2AutenticadorExterno-test/test-src

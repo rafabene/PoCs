@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+   
+   <local-tx-datasource>
+      <jndi-name>Seam2AutenticadorExternoDatasource</jndi-name>
+      <use-java-context>true</use-java-context>
+      <connection-url>jdbc:hsqldb:MyDB</connection-url>
+      <driver-class>org.hsqldb.jdbcDriver</driver-class>
+      <user-name>sa</user-name>
+      <password></password>
+   </local-tx-datasource>
+    
+</datasources>
